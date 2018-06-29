@@ -2,7 +2,11 @@ import json
 import logging
 import os
 import smtplib
+
+# The code below is effective only when the alidayu sdk(ie, top) is copied to
+# the core directory. last added by liy, 06/30/2018
 import top.api
+
 from email.mime.text import MIMEText
 from email.header import Header
 
