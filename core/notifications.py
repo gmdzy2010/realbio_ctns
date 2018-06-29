@@ -51,9 +51,9 @@ class Notifications:
         request = top.api.AlibabaAliqinFcSmsNumSendRequest()
         request.set_app_info(top.appinfo(self._appkey, self._secret))
         request.sms_type = "normal"
-        request.sms_free_sign_name = "锐翌集群"
+        request.sms_free_sign_name = ""
         request.rec_num = sms_phone_list
-        request.sms_template_code = "SMS_10845500"
+        request.sms_template_code = ""
         request.sms_param = json.dumps({
             'hostname': self.host_name,
             'in_temp': str(in_temp),
@@ -83,8 +83,8 @@ class Notifications:
         request.called_num = tts_phone_list
         
         # TODO: the "called_show_number" need to certify
-        request.called_show_num = "051482043271"
-        request.tts_code = "TTS_10970049"
+        request.called_show_num = ""
+        request.tts_code = ""
         request.tts_param = json.dumps({
             'hostname': self.host_name,
             'in_temp': str(in_temp),
