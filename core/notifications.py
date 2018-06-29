@@ -7,7 +7,6 @@ from email.mime.text import MIMEText
 from email.header import Header
 
 
-
 class Notifications:
     """
     The short message(sms) and voice message(tts) notifications
