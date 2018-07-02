@@ -103,7 +103,7 @@ class Notifications:
             return 0
     
     def email_notifications(self, email_host="smtp.mxhichina.com",
-                            username=None, password=None,
+                            username=None, password=None, email_port=80,
                             email_receiver_list=None):
         email_host = email_host
         sender, receivers = username, email_receiver_list
@@ -117,7 +117,7 @@ class Notifications:
         message['To'] = Header("admin group", 'utf-8')
         message['Subject'] = Header("集群高温预警", 'utf-8')
         try:
-            smtp_obj = smtplib.SMTP(host=email_host, port=80)
+            smtp_obj = smtplib.SMTP(host=email_host, port=email_port)
             smtp_obj.login(username, password)
             smtp_obj.sendmail(sender, receivers, message.as_string())
             self.logger.info("Email notifications send success!")
