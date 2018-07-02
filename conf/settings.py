@@ -63,9 +63,7 @@ EX_TEMP_LV2 = 70
 
 # The file path settings
 
-TEMP_FILE_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs"
-)
+TEMP_FILE_PATH = ""
 
 LOGS_FILE_PATH = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs"
