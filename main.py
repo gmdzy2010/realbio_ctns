@@ -41,6 +41,7 @@ def get_specified_host(host_kind="compute_node", ensure_sms=True,
                 )
             notifications.email_notifications(
                 email_host=settings.EMAIL_HOST,
+                email_port=settings.EMAIL_PORT,
                 username=settings.EMAIL_USERNAME,
                 password=settings.EMAIL_PASSWORD,
                 email_receiver_list=settings.EMAIL_RECEIVER_LIST,
@@ -53,6 +54,7 @@ def get_specified_host(host_kind="compute_node", ensure_sms=True,
                 )
             notifications.email_notifications(
                 email_host=settings.EMAIL_HOST,
+                email_port=settings.EMAIL_PORT,
                 username=settings.EMAIL_USERNAME,
                 password=settings.EMAIL_PASSWORD,
                 email_receiver_list=settings.EMAIL_RECEIVER_LIST,
