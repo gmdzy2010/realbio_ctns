@@ -72,6 +72,8 @@ LOGS_FILE_PATH = os.path.join(
 
 # Email settings
 
+EMAIL_PORT = ""
+
 EMAIL_HOST = ""
 
 EMAIL_USERNAME = ""
